@@ -16,4 +16,4 @@ COPY . /app
 RUN poetry install
 
 # Запустимо наш застосунок всередині контейнера
-ENTRYPOINT ["python", "assistant.py"]
+ENTRYPOINT ["poetry", "run", "python", "assistant.py"]
